@@ -30,7 +30,7 @@ registerLocaleData(ptBr);
     AppComponent,
     SobreNosComponent,
     CabecalhoComponent,
-    DetalhesComponent,
+    // DetalhesComponent,
     RodapeComponent
     
   ],
