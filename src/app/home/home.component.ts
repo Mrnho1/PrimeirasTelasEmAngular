@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private http:HttpClient){}
   //acessando a API
   ngOnInit(): void {
+    //acesso da API
     this.http.get<any>("http://localhost:3000/imoveis").subscribe(data => {
       this.imoveis = data;
     })
@@ -35,6 +36,7 @@ export class HomeComponent implements OnInit {
 
   nome: string = 'Lucas';
   sobrenome: string = 'Marinho';
+  //importante para a API
   imoveis: any;
     
 }

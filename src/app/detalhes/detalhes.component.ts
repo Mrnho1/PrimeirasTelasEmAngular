@@ -9,6 +9,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 })
 //quero que ja seja executado implements OnInit
 export class DetalhesComponent implements OnInit {
+ //importante para a API
   imovelId: string;
   imovel : any;
 
@@ -17,12 +18,14 @@ export class DetalhesComponent implements OnInit {
 
   constructor(
     private router: ActivatedRoute,
+    //acesso dos ids
     private http: HttpClient
     ){}
 
   ngOnInit(){
     this.router.paramMap.subscribe(params => {
       this.imovelId = params.get('id') ?? '';
+      //acesso dos ids
       this.http.get<any>('http://localhost:3000/imoveis/' + this.imovelId).subscribe(data => {
       this.imovel = data;
       })
