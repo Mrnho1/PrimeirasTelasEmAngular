@@ -1,0 +1,75 @@
+<div class="container">
+  <h1>Olá {{ nome }}</h1>
+  <h2>Lista de imóveis</h2>
+  <section class="lista-imoveis">
+    <mat-grid-list cols="3" rowHeight="3:4">
+      <!-- Primeiro Card -->
+      <mat-grid-tile *ngFor="let imovel of imoveis; let i = index">
+        <mat-card>
+          <img
+            mat-card-image
+            class="cartao-imagem"
+            src="{{ imovel.foto }}"
+            alt="{{ imovel.titulo }}"
+          />
+          <mat-card-content class="alinha-sub"
+            ><h3>{{ imovel.titulo }}</h3>
+            <ul>
+              <li>Quartos: {{ imovel.quartos }}</li>
+              <li>Banheiros: {{ imovel.banheiros }}</li>
+              <li>Metragem: {{ imovel.area }}m²</li>
+              <li>Preço: {{ imovel.preco | currency }}</li>
+            </ul>
+          </mat-card-content>
+          <mat-card-actions>
+            <button [class]="imovel.favorito === false? 'favorite' : 'favorite-check'"
+            [title]="imovel.favorito === false? 'Adicionar aos favoritos' : 'Remover dos favoritos' " mat-button (click)="toogleFavorito(i)">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="favorite" ></mat-icon>
+            </button>
+            <button mat-raised-button color="primary" (click)="detalhes(imovel.id)">Entre em contato!</button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+      <!-- Primeiro Card -->
+    </mat-grid-list>
+  </section>
+  <h2>Lista de favoritos</h2>
+  <section class="favoritos">
+    
+      <mat-grid-list cols="3" rowHeight="3:4">
+        <!-- Primeiro Card -->
+        <div *ngFor="let imovel of imoveis; let i = index">
+        <mat-grid-tile *ngIf="imovel.favorito === true">
+          <mat-card>
+            <img
+              mat-card-image
+              class="cartao-imagem"
+              src="{{ imovel.foto }}"
+              alt="{{ imovel.titulo }}"
+            />
+            <mat-card-content class="alinha-sub"
+              ><h3>{{ imovel.titulo }}</h3>
+              <ul>
+                <li>Quartos: {{ imovel.quartos }}</li>
+                <li>Banheiros: {{ imovel.banheiros }}</li>
+                <li>Metragem: {{ imovel.area }}m²</li>
+                <li>Preço: {{ imovel.preco | currency }}</li>
+              </ul>
+            </mat-card-content>
+            <mat-card-actions>
+              <button [class]="imovel.favorito === false? 'favorite' : 'favorite-check'"
+            [title]="imovel.favorito === false? 'Adicionar aos favoritos' : 'Remover dos favoritos' " mat-button (click)="toogleFavorito(i)">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="favorite" ></mat-icon>
+            </button>
+              <button mat-raised-button color="primary" (click)="detalhes(imovel.id)">
+                Entre em contato!
+              </button>
+            </mat-card-actions>
+          </mat-card>
+        </mat-grid-tile>
+      </div>
+        <!-- Primeiro Card -->
+      </mat-grid-list>
+    
+  </section>
+</div>

@@ -1,0 +1,66 @@
+{
+  "imoveis": [
+    {
+      "id": 1,
+      "titulo": "Casa Magnífica",
+      "foto": "https://i.ibb.co/JKzFtzj/casa.jpg",
+      "quartos": 4,
+      "banheiros": 3,
+      "area": 360,
+      "preco": 990000,
+      "favorito": true
+    },
+    {
+      "id": 2,
+      "titulo": "Apartamento Padrão",
+      "foto": "https://i.ibb.co/tmsG61R/apartamento.jpg",
+      "quartos": 2,
+      "banheiros": 1,
+      "area": 45,
+      "preco": 120000,
+      "favorito": false
+    },
+    {
+      "id": 3,
+      "titulo": "Casa de Campo",
+      "descricao": "Bem-vindo(a) ao seu futuro lar! Esta magnífica casa de 4 quartos, com duas suítes, é a oportunidade perfeita para você e sua família desfrutarem de uma vida confortável e elegante. Com seus generosos 4 quartos, esta casa oferece amplo espaço para acomodar toda a família. Além disso, duas suítes privativas garantem o máximo de conforto e privacidade para os moradores. A sala de estar espaçosa e aconchegante é perfeita para momentos de lazer em família ou para receber amigos.O ambiente proporciona um cenário ideal para desfrutar de noites agradáveis e descontraídas.",
+      "descricao2":"Essa casa representa uma oportunidade imperdível para conquistar um lar que combina conforto, elegância e praticidade em uma localização privilegiada. Não perca tempo e agende uma visita hoje mesmo!",
+      "foto": "https://i.ibb.co/5h1XHzY/casa-de-campo.jpg",
+      "quartos": 7,
+      "banheiros": 5,
+      "area": 800,
+      "preco": 1500000,
+      "favorito": false
+    },
+    {
+      "id": 4,
+      "titulo": "Flat Minimalista",
+      "foto": "https://i.ibb.co/FqSpsYt/flat.jpg",
+      "quartos": 1,
+      "banheiro": 1,
+      "area": 36,
+      "preco": 180000,
+      "favorito": false
+    },
+    {
+      "id": 5,
+      "titulo": "Sala Comercial",
+      "foto": "https://i.ibb.co/2nNsFkt/sala-comercial.jpg",
+      "quartos": 0,
+      "banheiros": 1,
+      "area": 25,
+      "preco": 250000,
+      "favorito": true
+    },
+    {
+      "id": 6,
+      "titulo": "Cobertura Duplex",
+      "foto": "https://i.ibb.co/pPHQfW2/cobertura.jpg",
+      "quartos": 3,
+      "banheiros": 3,
+      "area": 200,
+      "preco": 1500000,
+      "favorito": true
+    }
+  ]
+}

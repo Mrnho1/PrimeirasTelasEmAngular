@@ -1,0 +1,29 @@
+@import "../app.component.scss";
+
+mat-toolbar{
+    background-color: $cor-secundaria;
+    
+    .container{
+        width: 1140px;
+        display: flex;
+        margin: auto; 
+        padding-top: 15px; 
+        padding-bottom: 20px;
+    h1{
+        font-size: 40px;
+        color: $cor-ternaria;
+        &::before{
+            content: '🏠';
+        }
+    }
+    .menu-spacer{
+        flex: 1 1 auto;
+    }
+    button{
+        color: $cor-ternaria;
+        &:hover{
+            color: black;
+        }
+    }
+  }
+}

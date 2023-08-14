@@ -1,0 +1,79 @@
+@import "../app.component.scss";
+
+
+.container{
+    width: 1140px;
+    display: block;
+    margin: auto;
+    h1{
+        font-family:$fonte-principal;
+        font-size: 40px;
+        padding-top: 30px;
+        color: $cor-secundaria;
+        font-family: $fonte-secundaria;
+    }
+    h2{
+        background-color: $cor-secundaria;
+        color: $cor-ternaria;
+        padding-left: 10px;
+        ::after{
+            content: "⭐";
+        }
+    }
+    mat-grid-tile {
+        mat-card {
+            background-color: #efefef;
+            margin: 10px;
+            box-shadow: $card-shadow;
+            transition: $card-transition;
+            &:hover {
+                box-shadow: $card-shadow-hover;
+            }
+            img {
+                padding: 2px;
+                width: 100%;
+            }
+            mat-card-content{
+                h3{
+                    font-size: 24px;
+                    font-family: $fonte-principal;
+                    color: rgb(54, 48, 48);
+                }
+                ul{
+                    padding-top: 0px;
+                    padding-left: 0px;
+                    padding-bottom: 20px;
+                    
+                }
+                li{
+                    list-style: none;
+                    font-family: $fonte-secundaria;
+                    color:rgb(105, 92, 92);
+                }
+            }
+            mat-card-actions{
+                gap: 10px;
+                .favorite{
+                    width: 10%;
+                    background-color: white;
+                    border: 1px solid black;
+                    mat-icon{
+                        color: $cor-secundaria;
+                    }
+                }
+                .favorite-check{
+                    width: 10%;
+                    background-color: $cor-secundaria;
+                }
+                button{
+                    width: 100%;
+                    cursor: pointer;
+                    background-color: $cor-secundaria;
+                    color: $cor-ternaria;
+                }
+            }
+        }
+        
+    }
+
+}

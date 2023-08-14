@@ -1,0 +1,28 @@
+@import '../app.component.scss';
+
+.container{
+    width: 1140px;
+    margin: auto;
+    display: block;
+    min-height: calc(100vh - 130px);
+    h2{
+        background-color: $cor-secundaria;
+        color: $cor-ternaria;
+        padding-left: 10px;
+        margin-top: 20px;
+        // text-align: center;
+    }
+    .product-details{
+        display: flex;
+        gap: 30px;
+        img{
+            width: 100%;
+        }
+        .product-description{
+            width: 100%;
+            p{
+                font-family: $fonte-secundaria;
+            }
+        }
+    }
+}

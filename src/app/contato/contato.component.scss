@@ -1,0 +1,29 @@
+@import '../app.component.scss';
+
+.container{
+    width: 1140px;
+    min-height: calc(100vh - 130px);
+    display: block;
+    margin: auto;
+    h1{
+        background-color: $cor-secundaria;
+        color: $cor-ternaria;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+    form{
+        mat-form-field{
+            display: block;
+            font-family: $fonte-secundaria;
+            font-size: 18px;
+        }
+        button{
+            width: 10%;
+            cursor: pointer;
+            border: none;
+            background-color: $cor-secundaria;
+            color: $cor-ternaria;
+            padding: 10px;
+    }
+}
+}
