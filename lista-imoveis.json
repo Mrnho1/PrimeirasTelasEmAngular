@@ -8,7 +8,9 @@
       "banheiros": 3,
       "area": 360,
       "preco": 990000,
-      "favorito": true
+      "favorito": true,
+      "descricao": "Uma casa magnífica de 4 quartos com amplo espaço e acabamentos luxuosos. Esta casa oferece uma experiência de vida requintada, com quartos espaçosos, uma cozinha moderna e uma área de estar deslumbrante. O espaçoso quintal oferece um ambiente perfeito para entretenimento ao ar livre.",
+      "descricao2": "Esta é uma oportunidade única para possuir uma residência verdadeiramente impressionante. Entre em contato para agendar uma visita."
     },
     {
       "id": 2,
@@ -18,29 +20,33 @@
       "banheiros": 1,
       "area": 45,
       "preco": 120000,
-      "favorito": false
+      "favorito": true,
+      "descricao": "Um apartamento padrão com um design moderno e eficiente. Este apartamento de 2 quartos oferece funcionalidade e conforto. Com uma localização conveniente, é perfeito para quem busca uma vida urbana.",
+      "descricao2": "Este apartamento é uma excelente oportunidade para investidores ou para quem procura uma vida prática e confortável na cidade."
     },
     {
       "id": 3,
       "titulo": "Casa de Campo",
-      "descricao": "Bem-vindo(a) ao seu futuro lar! Esta magnífica casa de 4 quartos, com duas suítes, é a oportunidade perfeita para você e sua família desfrutarem de uma vida confortável e elegante. Com seus generosos 4 quartos, esta casa oferece amplo espaço para acomodar toda a família. Além disso, duas suítes privativas garantem o máximo de conforto e privacidade para os moradores. A sala de estar espaçosa e aconchegante é perfeita para momentos de lazer em família ou para receber amigos.O ambiente proporciona um cenário ideal para desfrutar de noites agradáveis e descontraídas.",
-      "descricao2":"Essa casa representa uma oportunidade imperdível para conquistar um lar que combina conforto, elegância e praticidade em uma localização privilegiada. Não perca tempo e agende uma visita hoje mesmo!",
       "foto": "https://i.ibb.co/5h1XHzY/casa-de-campo.jpg",
       "quartos": 7,
       "banheiros": 5,
       "area": 800,
       "preco": 1500000,
-      "favorito": false
+      "favorito": false,
+      "descricao": "Bem-vindo(a) ao seu futuro lar! Esta magnífica casa de 7 quartos, com duas suítes, é a oportunidade perfeita para você e sua família desfrutarem de uma vida confortável e elegante. Com seus generosos 7 quartos, esta casa oferece amplo espaço para acomodar toda a família. Além disso, duas suítes privativas garantem o máximo de conforto e privacidade para os moradores. A sala de estar espaçosa e aconchegante é perfeita para momentos de lazer em família ou para receber amigos. O ambiente proporciona um cenário ideal para desfrutar de noites agradáveis e descontraídas.",
+      "descricao2": "Essa casa representa uma oportunidade imperdível para conquistar um lar que combina conforto, elegância e praticidade em uma localização privilegiada. Não perca tempo e agende uma visita hoje mesmo!"
     },
     {
       "id": 4,
       "titulo": "Flat Minimalista",
       "foto": "https://i.ibb.co/FqSpsYt/flat.jpg",
       "quartos": 1,
-      "banheiro": 1,
+      "banheiros": 1,
       "area": 36,
       "preco": 180000,
-      "favorito": false
+      "favorito": false,
+      "descricao": "Um flat minimalista com um design contemporâneo. Este espaço compacto de 1 quarto oferece funcionalidade e estilo. Perfeito para pessoas solteiras ou casais que procuram um ambiente moderno.",
+      "descricao2": "Este flat é uma ótima escolha para quem busca praticidade e modernidade em um espaço elegante."
     },
     {
       "id": 5,
@@ -50,7 +56,9 @@
       "banheiros": 1,
       "area": 25,
       "preco": 250000,
-      "favorito": true
+      "favorito": false,
+      "descricao": "Uma sala comercial versátil em uma localização estratégica. Este espaço oferece muitas possibilidades para empresas e profissionais autônomos. Com design moderno e bem iluminado, é o ambiente perfeito para prosperar nos negócios.",
+      "descricao2": "Esta sala comercial é uma oportunidade única para estabelecer ou expandir sua atividade comercial em um espaço moderno e atraente."
     },
     {
       "id": 6,
@@ -60,7 +68,15 @@
       "banheiros": 3,
       "area": 200,
       "preco": 1500000,
-      "favorito": true
+      "favorito": false,
+      "descricao": "Uma cobertura duplex elegante com vista panorâmica. Com 3 quartos espaçosos, esta cobertura oferece o equilíbrio perfeito entre estilo e conforto. O terraço espaçoso é perfeito para relaxar e entreter com vista para a cidade.",
+      "descricao2": "Essa cobertura é uma oportunidade rara de possuir um espaço sofisticado que combina a sensação de uma casa com a conveniência de um apartamento, tudo em uma localização privilegiada."
     }
-  ]
+  ],
+  "contato": {
+    "nome": "sdad dsadsad",
+    "email": "email@email.com",
+    "assunto": "Tenho interesse em um imóvel",
+    "mensagem": "sdasdassds"
+  }
 }

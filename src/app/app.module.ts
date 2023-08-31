@@ -11,7 +11,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
-import { ContatoComponent } from './contato/contato.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 
 
@@ -21,6 +20,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetalhesComponent } from './detalhes/detalhes.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { SessionTimerComponent } from './session-timer/session-timer.component';
+import { LoginComponent } from './login/login.component';
 
 //MASCARA DE MOEDA REAL
 registerLocaleData(ptBr);
@@ -31,7 +32,9 @@ registerLocaleData(ptBr);
     SobreNosComponent,
     CabecalhoComponent,
     // DetalhesComponent,
-    RodapeComponent
+    RodapeComponent,
+    SessionTimerComponent,
+    LoginComponent
     
   ],
   imports: [

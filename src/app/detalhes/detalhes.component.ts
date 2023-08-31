@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
@@ -26,6 +26,7 @@ export class DetalhesComponent implements OnInit {
 
   constructor(
     private router: ActivatedRoute,
+    private router1: Router,
     //acesso dos ids
     private http: HttpClient
     ){}
@@ -40,5 +41,9 @@ export class DetalhesComponent implements OnInit {
     this.imovel = this.imoveis[this.imoveis.findIndex((imovel: any) => imovel.id === parseInt(this.imovelId))];
     // console.log(this.imovel);
     })
+  }
+  
+  detalhes(imovelId: string){
+    this.router1.navigate(['/detalhes',imovelId]);
   }
 }

@@ -1,28 +1,20 @@
 @import "../app.component.scss";
 
-
-.container{
+.container {
     width: 1140px;
+    min-height: calc(100vh - 226px);
     display: block;
     margin: auto;
-    h1{
-        font-family:$fonte-principal;
-        font-size: 40px;
-        padding-top: 30px;
-        color: $cor-secundaria;
-        font-family: $fonte-secundaria;
-    }
-    h2{
-        background-color: $cor-secundaria;
-        color: $cor-ternaria;
-        padding-left: 10px;
-        ::after{
-            content: "⭐";
-        }
+    h1 {
+        font-family: $fonte-principal;
+        font-size: 24px;
+        line-height: 32px;
+        padding-top: 20px;
+        color: $cor-principal;
     }
     mat-grid-tile {
         mat-card {
-            background-color: #efefef;
+            background-color: $branco;
             margin: 10px;
             box-shadow: $card-shadow;
             transition: $card-transition;
@@ -30,50 +22,66 @@
                 box-shadow: $card-shadow-hover;
             }
             img {
-                padding: 2px;
                 width: 100%;
             }
-            mat-card-content{
-                h3{
-                    font-size: 24px;
+            mat-card-content {
+                h2 {
                     font-family: $fonte-principal;
-                    color: rgb(54, 48, 48);
+                    font-size: 24px;
+                    color: $cinza-escuro;
+                    padding-top: 15px;
                 }
-                ul{
+                ul {
                     padding-top: 0px;
-                    padding-left: 0px;
                     padding-bottom: 20px;
-                    
-                }
-                li{
-                    list-style: none;
-                    font-family: $fonte-secundaria;
-                    color:rgb(105, 92, 92);
-                }
-            }
-            mat-card-actions{
-                gap: 10px;
-                .favorite{
-                    width: 10%;
-                    background-color: white;
-                    border: 1px solid black;
-                    mat-icon{
-                        color: $cor-secundaria;
+                    padding-left: 0px;
+                    list-style-type: none;
+                    li {
+                        font-family: $fonte-secundaria;
+                        color: $cinza-medio;
+                        font-size: $media;
+                        line-height: 24px;
                     }
                 }
-                .favorite-check{
-                    width: 10%;
-                    background-color: $cor-secundaria;
+            }
+            mat-card-actions {
+                padding-bottom:20px;
+                .favorite {
+                    width: 20%;
+                    background-color: $branco;
+                    border: 1px solid $cor-principal;
+                    margin-right: 10px;
+                    mat-icon {
+                        color: $cor-principal;
+                    }
                 }
-                button{
-                    width: 100%;
+                .favorite-checked {
+                    width: 20%;
+                    background-color: $cor-principal;
+                    margin-right: 10px;
+                }
+                button {
+                    width: 80%;
+                    height: 48px;
                     cursor: pointer;
+                    border: none;
+                    border-radius: 4px;
                     background-color: $cor-secundaria;
-                    color: $cor-ternaria;
+                    color: $branco;
+                    font-family: $fonte-secundaria;
+                    font-size: $media;
                 }
             }
         }
-        
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+       width: 100%; 
+       h1 {
+            padding-left: 10px;
+       }
     }
 
 }
